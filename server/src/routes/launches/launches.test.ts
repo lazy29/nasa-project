@@ -3,10 +3,12 @@ import request from 'supertest';
 
 import app from '../../app';
 import { mongoConnect, mongoDisconnect } from '../../services/mongo';
+import { loadPlanetsData } from '../../models/planetsModel';
 
 describe('Launches API', () => {
   beforeAll(async () => {
     await mongoConnect();
+    await loadPlanetsData();
   });
 
   afterAll(async () => {
