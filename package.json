@@ -1,0 +1,28 @@
+{
+  "name": "nasa-project",
+  "version": "1.0.0",
+  "scripts": {
+    "install:client": "npm i --prefix client",
+    "install:server": "npm i --prefix server",
+    "install": "npm run install:client && npm run install:server",
+    "build:client": "npm run build --prefix client",
+    "build:server": "npm run build --prefix server",
+    "build": "npm run build:client && npm run build:server",
+    "client": "npm run start --prefix client",
+    "server": "npm run dev --prefix server",
+    "dev": "npm run server & npm run client",
+    "start": "npm run start --prefix server",
+    "deploy": "npm run build && npm run start",
+    "deploy:cluster": "npm run build && npm run cluster --prefix server",
+    "server: cluster": "npm run cluster --prefix server",
+    "test:client": "npm test --prefix client",
+    "test:server": "npm test --prefix server",
+    "test": "npm run test:server && npm run test:client"
+  },
+  "keywords": [
+    "nasa-project"
+  ],
+  "author": "swaraj",
+  "license": "ISC",
+  "description": "NASA Control Mission frontend + backend"
+}

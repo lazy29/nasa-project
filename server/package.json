@@ -1,0 +1,43 @@
+{
+  "name": "nasa-project-api",
+  "version": "1.0.0",
+  "main": "src/server.ts",
+  "scripts": {
+    "test": "jest --detectOpenHandles",
+    "test:watch": "jest --detectOpenHandles --watch",
+    "build": "tsc",
+    "dev": "tsc -w & nodemon dist/server.js",
+    "start": "node dist/server.js",
+    "cluster": "pm2 start dist/server.js -i max"
+  },
+  "keywords": [
+    "nasa-mission-control",
+    "nasa-api"
+  ],
+  "author": "swaraj",
+  "license": "ISC",
+  "description": "NASA Mission Control API",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.5.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.5",
+    "morgan": "^1.10.0",
+    "pm2": "^5.4.1"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.14.10",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.1.5",
+    "typescript": "^5.5.3"
+  }
+}
