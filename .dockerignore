@@ -8,3 +8,4 @@ server/public
 server/dist
 jest.config.js
 server/**/*.test.ts
+server/config.env
