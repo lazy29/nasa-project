@@ -1,0 +1,10 @@
+.git
+
+*/node_modules
+
+client/README.md
+
+server/public
+server/dist
+jest.config.js
+server/**/*.test.ts
